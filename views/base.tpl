@@ -9,7 +9,7 @@
 		<link rel="canonical" href="{{ @domain }}">
 		<title>Instant Zoidberg Whoop</title>
 		
-		<!-- facebook -->
+		<!-- Facebook -->
 		<meta property="fb:app_id" content="1374913459424162">
 		<meta property="og:title" content="Instant Zoidberg Whoop">
 		<meta property="og:description" content="For those times when you feel like scuttling out of the room.">
@@ -32,11 +32,8 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="{{ @domain }}favicon-16x16.png">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		
-		<!-- Scripts -->
-		<script type="application/javascript" src="<?php echo $domain; ?>js/main.js"></script>
-		
 		<!-- CSS -->
-		<link href="{{ @domain }}css/main.css" rel="stylesheet" type="text/css">
+		<link href="{{ @domain }}css/main.css?ver={{ @css_modified_time }}" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<h1 id="zoidberg-header">Instant Zoidberg Whoop</h1>
@@ -63,5 +60,8 @@
 				<button id="arcade-button" onclick="playWhoop()"></button>
 			</div>
 		</div>
+
+		<!-- Scripts -->
+		<script type="application/javascript" src="<?php echo $domain; ?>js/main.js?ver = {{ @js_modified_time }}"></script>
 	</body>
 </html>
