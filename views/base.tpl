@@ -3,7 +3,7 @@
 	<head>
 		<!-- Meta -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5">
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8">
 		<meta name="description" content="For those times when you feel like scuttling out of the room.">
 		<meta name="author" content="Nehal Patel">
 		<link rel="canonical" href="{{ @domain }}">
