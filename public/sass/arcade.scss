@@ -1,0 +1,43 @@
+@import "compass/css3";
+
+$buttoncolor: #ff544d;
+#arcade-button::-moz-focus-inner {
+	border: 0;
+}
+#arcade-button {
+	overflow: visible;
+	outline: 0;
+	position: relative;
+	cursor: pointer;
+	width: 120px;
+	height: 120px;
+	font-size: 30px;
+	@include border-radius(60px);
+	padding: 20px;
+	border: $buttoncolor 1px solid;
+	background-color: $buttoncolor;
+	@include background-image(radial-gradient(40px 40px, circle contain, $buttoncolor 15px, lighten($buttoncolor,6%) 30px, lighten($buttoncolor,6%) 40px, darken($buttoncolor,1%) 65px));
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include box-shadow(rgba(0,0,0,.8) 0 0 10px 5px, rgba(255,255,255,.7) 0 3px 3px inset, darken($buttoncolor,40%) 0 8px 10px inset, rgba(0,0,0,.3) 0 20px 10px inset, rgba(255,255,255,.5) 0 -2px 3px inset, darken($buttoncolor,30%) 0 -7px 20px inset);
+	
+	&:active {
+		border-color: darken($buttoncolor, 90%);
+		@include background-image(radial-gradient(40px 40px, circle contain, $buttoncolor 15px, darken($buttoncolor,15%) 30px, darken($buttoncolor,15%) 40px, darken($buttoncolor,25%) 65px));
+		@include box-shadow(rgba(0,0,0,.8) 0 0 10px 5px, rgba(0,0,0,.8) 0 3px 3px inset, darken($buttoncolor,30%) 0 8px 10px inset, rgba(0,0,0,.3) 0 20px 10px inset, rgba(255,255,255,.3) 0 -2px 3px inset, darken($buttoncolor,30%) 0 -7px 20px inset);
+	}
+}
+#arcade-container {
+	display: block;
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -21px;
+	margin: 0;
+	padding: 20px;
+	background: darken($buttoncolor, 10px);
+	width: 120px;
+	height: 120px;
+	@include border-radius(80px);
+	@include box-shadow(darken($buttoncolor,20%) 0 4px 5px inset, rgba(255,255,255,.5) 0 12px 5px inset, darken($buttoncolor,30%) 0 -12px 5px inset, rgba(0,0,0,.8) 0 4px 8px);
+}
