@@ -1,0 +1,13 @@
+{
+    "name": "nehalvpatel/instantwhoop.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nehal Patel",
+            "email": "nehal.patel@me.com"
+        }
+    ],
+    "require": {
+        "bcosca/fatfree": "^3.5"
+    }
+}

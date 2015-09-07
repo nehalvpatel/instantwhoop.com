@@ -26,4 +26,74 @@ body {
 }
 .fb-like {
 	margin-right: 5px;
+  display: inline-flex !important;
+  position: relative;
+}
+
+/* line 4, ../sass/arcade.scss */
+#arcade-button::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 7, ../sass/arcade.scss */
+#arcade-button {
+  overflow: visible;
+  outline: 0;
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  font-size: 30px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  padding: 20px;
+  border: #ff544d 1px solid;
+  background-color: #ff544d;
+  background-image: -webkit-gradient(radial, 40px 40px, 0, 40px 40px, 65, color-stop(23.07692%, #ff544d), color-stop(46.15385%, #ff716c), color-stop(61.53846%, #ff716c), color-stop(100%, #ff4f48));
+  background-image: -webkit-radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff716c 30px, #ff716c 40px, #ff4f48 65px);
+  background-image: -moz-radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff716c 30px, #ff716c 40px, #ff4f48 65px);
+  background-image: -o-radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff716c 30px, #ff716c 40px, #ff4f48 65px);
+  background-image: radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff716c 30px, #ff716c 40px, #ff4f48 65px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(255, 255, 255, 0.7) 0 3px 3px inset, #800500 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.5) 0 -2px 3px inset, #b30700 0 -7px 20px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(255, 255, 255, 0.7) 0 3px 3px inset, #800500 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.5) 0 -2px 3px inset, #b30700 0 -7px 20px inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(255, 255, 255, 0.7) 0 3px 3px inset, #800500 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.5) 0 -2px 3px inset, #b30700 0 -7px 20px inset;
+}
+/* line 24, ../sass/arcade.scss */
+#arcade-button:active {
+  border-color: black;
+  background-image: -webkit-gradient(radial, 40px 40px, 0, 40px 40px, 65, color-stop(23.07692%, #ff544d), color-stop(46.15385%, #ff0b00), color-stop(61.53846%, #ff0b00), color-stop(100%, #cc0800));
+  background-image: -webkit-radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff0b00 30px, #ff0b00 40px, #cc0800 65px);
+  background-image: -moz-radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff0b00 30px, #ff0b00 40px, #cc0800 65px);
+  background-image: -o-radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff0b00 30px, #ff0b00 40px, #cc0800 65px);
+  background-image: radial-gradient(40px 40px, circle contain, #ff544d 15px, #ff0b00 30px, #ff0b00 40px, #cc0800 65px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(0, 0, 0, 0.8) 0 3px 3px inset, #b30700 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.3) 0 -2px 3px inset, #b30700 0 -7px 20px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(0, 0, 0, 0.8) 0 3px 3px inset, #b30700 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.3) 0 -2px 3px inset, #b30700 0 -7px 20px inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px 5px, rgba(0, 0, 0, 0.8) 0 3px 3px inset, #b30700 0 8px 10px inset, rgba(0, 0, 0, 0.3) 0 20px 10px inset, rgba(255, 255, 255, 0.3) 0 -2px 3px inset, #b30700 0 -7px 20px inset;
+}
+
+/* line 30, ../sass/arcade.scss */
+#arcade-container {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -21px;
+  margin: 0;
+  padding: 20px;
+  background: #ff231a;
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+  border-radius: 80px;
+  -webkit-box-shadow: #e60900 0 4px 5px inset, rgba(255, 255, 255, 0.5) 0 12px 5px inset, #b30700 0 -12px 5px inset, rgba(0, 0, 0, 0.8) 0 4px 8px;
+  -moz-box-shadow: #e60900 0 4px 5px inset, rgba(255, 255, 255, 0.5) 0 12px 5px inset, #b30700 0 -12px 5px inset, rgba(0, 0, 0, 0.8) 0 4px 8px;
+  box-shadow: #e60900 0 4px 5px inset, rgba(255, 255, 255, 0.5) 0 12px 5px inset, #b30700 0 -12px 5px inset, rgba(0, 0, 0, 0.8) 0 4px 8px;
 }

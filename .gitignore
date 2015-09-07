@@ -1,6 +1,21 @@
-composer.phar
-vendor/
+# Ignore common cruft
+.DS_Store
+.idea
+coverage
+Thumbs.db
 
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# Ignore potentially sensitive PHPUnit file
+phpunit.xml
+
+# Ignore composer generated files
+composer.phar
+/vendor
+
+# Ignore temporary framework files
+/public/tmp
+
+# Ignore deployer files
+common.php
+composer.php
+deploy.php
+deployer.phar
