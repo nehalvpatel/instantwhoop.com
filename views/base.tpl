@@ -62,6 +62,6 @@
 		</div>
 
 		<!-- Scripts -->
-		<script type="application/javascript" src="<?php echo $domain; ?>js/main.js?ver = {{ @js_modified_time }}"></script>
+		<script type="application/javascript" src="<?php echo $domain; ?>js/main.js?ver={{ @js_modified_time }}"></script>
 	</body>
 </html>
